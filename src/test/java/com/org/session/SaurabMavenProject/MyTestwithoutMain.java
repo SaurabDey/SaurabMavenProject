@@ -30,7 +30,12 @@ public class MyTestwithoutMain {
 		if (mycomingbrowserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "resource/chromedriver.exe");
 			driver = new ChromeDriver();
-		System.out.println("changes kiran code");
+
+		
+System.out.println("changes kiran code");
+
+			System.out.println("Sagar here");
+
 		}
 		else if(mycomingbrowserName.equals("ie"))
 		{
