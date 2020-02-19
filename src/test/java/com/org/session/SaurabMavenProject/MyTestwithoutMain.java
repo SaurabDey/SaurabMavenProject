@@ -30,6 +30,7 @@ public class MyTestwithoutMain {
 		if (mycomingbrowserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "resource/chromedriver.exe");
 			driver = new ChromeDriver();
+			System.out.println("this is git bash");
 		}
 		
 		else if(mycomingbrowserName.equals("ie"))
