@@ -22,7 +22,7 @@ public class RegistrationClass {
 		//Assert.assertEquals( driver.getCurrentUrl(), "https://www.facebook.com/saurab");
 		
 		SoftAssert so= new SoftAssert();
-		so.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/saurab");
+		so.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/");
 		
 		WebElement firstname = driver.findElement(firstname_locator);
 		firstname.sendKeys("saurab");

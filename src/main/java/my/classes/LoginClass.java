@@ -21,7 +21,7 @@ public class LoginClass {
 	{
 		driver.get("https://www.facebook.com/");
 		
-		Assert.assertEquals("Facebook – log in or sign saurab", driver.getTitle());
+		Assert.assertEquals("Facebook – log in or sign up", driver.getTitle());
 		
 		WebElement username = driver.findElement(user_locator);
 		username.sendKeys("saurab@gmail.com");
