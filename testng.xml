@@ -7,18 +7,4 @@
       <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
     </classes>
   </test> <!-- Test -->
-  
- <test name="Test2">
-      <parameter name="xyz"  value="firefox"></parameter>
-    <classes>
-      <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
-    </classes>
-  </test>
-
- <test name="Test3">
-     <parameter name="xyz"  value="ie"></parameter>
-    <classes>
-      <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
-    </classes>
-  </test>  <!-- Test -->
 </suite> <!-- Suite -->

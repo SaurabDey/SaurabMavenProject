@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import junit.framework.Assert;
+
 public class LoginClass {
 	WebDriver driver;
 	
@@ -18,6 +20,9 @@ public class LoginClass {
 	public void login()
 	{
 		driver.get("https://www.facebook.com/");
+		
+		Assert.assertEquals("Facebook – log in or sign saurab", driver.getTitle());
+		
 		WebElement username = driver.findElement(user_locator);
 		username.sendKeys("saurab@gmail.com");
 

@@ -3,6 +3,8 @@ package my.classes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class RegistrationClass {
 	WebDriver driver;
@@ -16,6 +18,12 @@ public class RegistrationClass {
 	public void registration()
 	{
 		driver.get("https://www.facebook.com/");
+		
+		//Assert.assertEquals( driver.getCurrentUrl(), "https://www.facebook.com/saurab");
+		
+		SoftAssert so= new SoftAssert();
+		so.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/saurab");
+		
 		WebElement firstname = driver.findElement(firstname_locator);
 		firstname.sendKeys("saurab");
 
@@ -24,5 +32,7 @@ public class RegistrationClass {
 
 		WebElement sigup = driver.findElement(sign_locator);
 		sigup.click();
+		
+		so.assertAll();
 	}
 }

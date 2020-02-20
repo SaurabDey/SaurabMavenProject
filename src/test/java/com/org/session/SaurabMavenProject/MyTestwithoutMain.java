@@ -31,13 +31,6 @@ public class MyTestwithoutMain {
 			System.setProperty("webdriver.chrome.driver", "resource/chromedriver.exe");
 			driver = new ChromeDriver();
 
-System.out.println("this is git bash");
-
-System.out.println("changes kiran code");
-
-
-			System.out.println("Sagar here");
-
 		}
 		else if(mycomingbrowserName.equals("ie"))
 		{
