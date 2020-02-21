@@ -3,8 +3,8 @@ package my.classes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
-import junit.framework.Assert;
 
 public class LoginClass {
 	WebDriver driver;
