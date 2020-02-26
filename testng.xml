@@ -7,4 +7,11 @@
       <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="Test2">
+   <parameter name="xyz"  value="ie"></parameter>
+    <classes>
+      <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -10,7 +10,7 @@ public class RegistrationClass {
 	WebDriver driver;
 	By firstname_locator=By.name("firstname");
 	By surname_locator=By.name("lastname");
-	By sign_locator=By.xpath("//button[text()='Sign Up']");
+	By sign_locator=By.xpath("//button[text()='Sign Up wrong']");
 	
 	public RegistrationClass(WebDriver driver2) {
 		driver=driver2;
