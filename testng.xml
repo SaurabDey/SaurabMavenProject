@@ -4,7 +4,7 @@
   <test name="Test1">
    <parameter name="xyz"  value="chrome"></parameter>
     <classes>
-      <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain"/>
+      <class name="com.org.session.SaurabMavenProject.MyTestwithoutMain2"/>
     </classes>
   </test> <!-- Test -->
   

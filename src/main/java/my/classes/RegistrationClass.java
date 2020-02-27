@@ -17,7 +17,6 @@ public class RegistrationClass {
 	}
 	public void registration()
 	{
-		driver.get("https://www.facebook.com/");
 		
 		//Assert.assertEquals( driver.getCurrentUrl(), "https://www.facebook.com/saurab");
 		

@@ -19,7 +19,7 @@ public class LoginClass {
 
 	public void login()
 	{
-		driver.get("https://www.facebook.com/");
+		
 		
 		Assert.assertEquals("Facebook – log in or sign up", driver.getTitle());
 		

@@ -3,7 +3,9 @@ package com.org.session.SaurabMavenProject;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -22,51 +24,32 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.utility.CommonUtil;
 
+import my.classes.CreatePageClass;
 import my.classes.LoginClass;
 import my.classes.RegistrationClass;
 
-public class MyTestwithoutMain extends BaseClass{
+public class MyTestwithoutMain2 extends BaseClass{
 
 	@Test
-	public void loginMethod(){
+	public void creatMethod(){
 		
 		try {
-			LoginClass log = new LoginClass(driver);
-			log.login();
-			test.pass("Login successfully!!");
+
+			CreatePageClass cre= new CreatePageClass(driver);
+			cre.createMethod();
+			
+			test.pass("CreatePageClass successfully!!");
 		} catch (Exception e) {
 			CommonUtil common= new  CommonUtil(driver);
 			MediaEntityModelProvider mediaModel = null;
 			try {
-				mediaModel = MediaEntityBuilder.createScreenCaptureFromPath(common.screenshotWhenNeeded("Login Error")).build();
+				mediaModel = MediaEntityBuilder.createScreenCaptureFromPath(common.screenshotWhenNeeded("CreatePageClass Error")).build();
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-			test.fail("Login error ", mediaModel);
+			test.fail("CreatePageClass error ", mediaModel);
 		}
 		
 	}
-	
-	@Test
-	public void registrationMethod() {
-		try {
-			RegistrationClass reg = new RegistrationClass(driver);
-			reg.registration();
-			test.pass("Registration successfully!!");
-		} catch (Exception e) {
-			CommonUtil common= new  CommonUtil(driver);
-			MediaEntityModelProvider mediaModel = null;
-			try {
-				mediaModel = MediaEntityBuilder.createScreenCaptureFromPath(common.screenshotWhenNeeded("Registration Error")).build();
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			test.fail("Registration error ", mediaModel);
-		}
-		
-		
-	}
-	
 }
